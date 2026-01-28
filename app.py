@@ -13,7 +13,7 @@ st.set_page_config(
 st.title("⚛️ CrystalScout: AI-Powered Materials Discovery")
 st.markdown("""
 **Objective:** Autonomous screening of inorganic semiconductors for photovoltaic applications.
-*Built by [Your Name] using Python & Streamlit.*
+*Built by Shahla Liaquat using Python & Streamlit.*
 """)
 st.divider()
 
@@ -59,11 +59,11 @@ elif min_stability == "Meta-Stable":
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.subheader(f"✅ Candidates Found: {len(filtered_df)}")
+    st.subheader(f"Candidates Found: {len(filtered_df)}")
     st.dataframe(filtered_df, height=400, use_container_width=True)
 
 with col2:
-    st.subheader("📊 Property Distribution")
+    st.subheader("Property Distribution")
     # Built-in Streamlit Chart (No extra libraries needed)
     st.scatter_chart(
         filtered_df,
@@ -75,4 +75,5 @@ with col2:
     )
 
 # 7. EXPORT SECTION
+
 st.caption("Data Source: Simulated inference from Random Forest & VAE models.")
